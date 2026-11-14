@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080816;
+    color: white;
+    font-family: 'Cairo', sans-serif;
+}
+
+header {
+    width: 100%;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(15, 15, 35, 0.95);
+    border-bottom: 1px solid #29264d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    color: white;
+    font-size: 24px;
+}
+
+header h2 span {
+    color: #9b5cff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: #d5d2e8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a66aff;
+}
+
+.hero {
+    min-height: 520px;
+    padding: 100px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 30%, #30205e 0, transparent 35%),
+        radial-gradient(circle at 20% 80%, #102b50 0, transparent 35%);
+}
+
+.hero > div {
+    max-width: 750px;
+}
+
+.tag {
+    color: #b38aff;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #a66aff;
+}
+
+.hero p {
+    color: #c1bfd3;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.main-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #713cff, #a64dff);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px #783cff55;
+}
+
+.section {
+    padding: 75px 8%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #b18aff;
+}
+
+.section > p {
+    color: #aaa7c1;
+    margin-bottom: 35px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.course {
+    background: #14142a;
+    border: 1px solid #302951;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.course:hover {
+    transform: translateY(-7px);
+    border-color: #9b5cff;
+    box-shadow: 0 10px 30px #713cff22;
+}
+
+.course h3 {
+    color: #b18aff;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.course p {
+    color: #c4c1d5;
+    margin-bottom: 12px;
+}
+
+.course a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 20px;
+    border-radius: 8px;
+    background: #713cff;
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: #111125;
+    border-top: 1px solid #302951;
+    color: #aaa7c1;
+}
+
+footer h3 {
+    color: #a66aff;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 65px 7%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+}
