@@ -396,3 +396,111 @@ footer h3 {
     padding: 18px;
   }
 }
+
+/* Student Dashboard */
+
+.dashboard-section {
+  background: #080816;
+}
+
+.dashboard-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.dashboard-card,
+.dashboard-course-card,
+.achievement-card {
+  background: #14142a;
+  border: 1px solid #302951;
+  border-radius: 15px;
+  padding: 22px;
+  text-align: center;
+}
+
+.dashboard-card strong {
+  display: block;
+  color: #b18aff;
+  font-size: 30px;
+}
+
+.dashboard-card span {
+  color: #aaa7c1;
+}
+
+.dashboard-heading {
+  margin: 25px 0 15px;
+  color: #b18aff;
+}
+
+.dashboard-courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.dashboard-course-card h4 {
+  color: #b18aff;
+  margin-bottom: 10px;
+}
+
+.dashboard-course-card p {
+  color: #aaa7c1;
+}
+
+.dashboard-progress {
+  height: 10px;
+  background: #080816;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 12px;
+}
+
+.dashboard-progress div {
+  height: 100%;
+  background: linear-gradient(90deg, #713cff, #a66aff);
+  border-radius: 20px;
+}
+
+.dashboard-achievements {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.achievement-card {
+  color: #aaa7c1;
+}
+
+.achievement-card strong {
+  display: block;
+  font-size: 28px;
+}
+
+.achievement-card.unlocked {
+  border-color: #a66aff;
+  color: #fff;
+}
+
+.resume-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#resume-button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 700px) {
+  .dashboard-summary,
+  .dashboard-courses {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-achievements {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
